@@ -1,0 +1,363 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #3b0a45;
+  color: #fff;
+}
+
+/* Header Styles */
+header {
+  background-color: #000;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Added padding for consistent spacing */
+}
+
+header .logo {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+header .navigation {
+  display: flex;
+  gap: 15px;
+}
+
+header .navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+header .navigation a:hover {
+  color: #ffd700;
+}
+
+.logo-img {
+  width: 90px;
+  height: auto;
+  border: 2px solid #ffd700; /* Adds a border around the logo in white color */
+}
+
+/* Banner Section */
+.home-banner {
+  background: url("footballbackgroundimage.png") no-repeat center center/cover;
+  color: white;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 10px 25px;
+  background-color: #7ed957;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #220c10;
+  color: #7ed957;
+}
+
+/* Clubs Section */
+.clubs {
+  padding: 40px 0;
+  background-color: #000;
+  text-align: center;
+}
+
+.clubs h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.club-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Club Item Styles */
+.club-item {
+  background-color: #3b0a45;
+  color: #fff;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.club-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #7ed957;
+}
+
+/* Club Image Styles */
+.club-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+
+/* Club Info Section */
+.club-info {
+  padding: 50px 0;
+  background: #2d1f33;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.club-info h2 {
+  font-size: 2.5rem;
+  color: #7ed957;
+  margin-bottom: 25px;
+}
+
+.club-info p {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+}
+
+/* Club Highlights */
+.club-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  background-color: #3b0a45;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 300px;
+}
+
+.highlight-item .club-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+}
+
+.highlight-item h3 {
+  color: #ffd700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.highlight-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Form Styles */
+.login-form,
+.signup-form {
+  padding: 40px 0;
+  background-color: #3b0a45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+form {
+  background-color: #291a24;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+form label {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #7ed957;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #220c10;
+  color: #7ed957;
+}
+
+form p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+form p a {
+  color: #7ed957;
+  text-decoration: underline;
+}
+
+form p a:hover {
+  color: #ffd700;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background: url("registerbackground.png") center/cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.cta-section h2 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #3b0a45;
+}
+
+.cta-btn {
+  background-color: #3b0a45;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #ffd700;
+  color: #3b0a45;
+  transform: translateY(-2px);
+}
+
+/* Container for general alignment */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Added padding for consistent spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  .club-list,
+  .club-highlights {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .club-item,
+  .highlight-item {
+    width: 100%;
+  }
+
+  .club-image,
+  .highlight-item .club-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+}

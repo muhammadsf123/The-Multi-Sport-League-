@@ -1,0 +1,196 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #3b0a45;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #000;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+header .navigation {
+  display: flex;
+  gap: 15px;
+}
+
+header .navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+header .navigation a:hover {
+  color: #ffd700;
+}
+
+.logo-img {
+  width: 90px;
+  height: auto;
+  border: 2px solid #ffd700; /* Adds a border around the logo in white color */
+}
+
+/* Signup Form Section */
+.signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #3b0a45;
+}
+
+.signup-form .container {
+  background-color: #291a24;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 100%;
+}
+
+.signup-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #7ed957;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form button {
+  width: 100%;
+  background-color: #3b0a45;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #ffd700;
+  color: #3b0a45;
+  transform: translateY(-2px);
+}
+
+form p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+form p a {
+  color: #7ed957;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+form p a:hover {
+  color: #ffd700;
+}
+
+.required-asterisk {
+  color: red;
+}
+
+.eye-icon {
+  cursor: pointer;
+  position: absolute;
+  right: -30px; /* Positions the icon inside the input field on the right side */
+  top: 150%; /* Moves the icon further down inside the input field */
+  transform: translateY(-50%); /* Ensures the icon is aligned properly */
+  width: 20px;
+  height: 20px;
+}
+
+form input[type="password"] {
+  padding-right: 40px;
+  position: relative;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .navigation {
+    justify-content: center;
+  }
+
+  .signup-form .container {
+    padding: 20px;
+  }
+
+  form button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">
+                <img src="sportsclubimagelogo.png" alt="Sports Club Logo" class="logo-img" /></h2>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="footballclub.html">Football</a>
+                <a href="cricketclub.html">Cricket</a>
+                <a href="tennisclub.html">Tennis</a>
+                <a href="signup.html" id="signupBtn">Become Member</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-form">
+            <div class="container">
+                <h2>Login</h2>
+                <form action="dashboard.html" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <br>
+
+                    <label for="password">Password:</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <img src="eyeiconimage.png" alt="Show Password" class="eye-icon" id="togglePassword">
+                    </div>
+                    <br>
+
+                    <button type="submit">Login</button>
+
+                    <p>Not a member yet? <a href="signup.html">Register here</a></p>
+                    <p><a href="#">Forgot your password?</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sports Club. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="login.js".js"></script>
+</body>
+
+</html>
